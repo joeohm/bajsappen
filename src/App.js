@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import MyBajsklumps from "./pages/MyBajsklumps";
 import GetStarted from "./pages/GetStarted";
 import Users from "./pages/Users";
+import ThemeSwitch from "./components/ThemeSwitch";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./assets/style.css";
@@ -24,6 +25,7 @@ export default function App() {
             <li className="nav-link">
               <Link to="/users">Users</Link>
             </li>
+            <ThemeSwitch />
           </ul>
         </nav>
         <Switch>

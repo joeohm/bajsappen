@@ -1,5 +1,5 @@
 const MyBajsklumps = () => {
-  return "bajs klumps";
+  return <p>bajs klumps</p>;
 };
 
 export default MyBajsklumps;
