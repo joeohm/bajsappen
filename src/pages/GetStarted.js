@@ -1,5 +1,5 @@
 const GetStarted = () => {
-  return "bajs GetStarted";
+  return <p>bajs GetStarted</p>;
 };
 
 export default GetStarted;

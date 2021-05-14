@@ -1,5 +1,5 @@
 const Home = () => {
-  return "bajs home";
+  return <p>bajs home</p>;
 };
 
 export default Home;
