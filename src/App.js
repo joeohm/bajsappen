@@ -3,11 +3,15 @@ import MyBajsklumps from "./pages/MyBajsklumps";
 import GetStarted from "./pages/GetStarted";
 import Users from "./pages/Users";
 import ThemeSwitch from "./components/ThemeSwitch";
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./assets/style.css";
+import { keepTheme } from "./utils/theme";
 
 export default function App() {
+  useEffect(() => {
+    keepTheme();
+  });
   return (
     <Router>
       <div>

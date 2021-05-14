@@ -2,12 +2,22 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  background-color: #c7d0b7;
+  background-color: var(--background);
 }
 
 /* Light mode */
 .background {
   background-color: #c7d0b7;
+}
+
+.theme-dark {
+  --background: #404536;
+  --text: #a3aa95;
+}
+
+.theme-light {
+  --background: #c7d0b7;
+  --text: #404536;
 }
 
 .navbar {
@@ -27,6 +37,10 @@ html {
   font-weight: 700;
   font-size: 30px;
   text-decoration: none;
-  color: #404536;
+  color: var(--text);
   text-transform: uppercase;
+}
+
+p {
+  color: var(--text);
 }
