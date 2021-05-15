@@ -8,7 +8,11 @@ const ThemeSwitch = () => {
       setTheme("theme-dark");
     }
   };
-  return <button onClick={() => handleOnClick()}>Switch theme</button>;
+  return (
+    <button className="bajsbutton" onClick={() => handleOnClick()}>
+      Switch theme
+    </button>
+  );
 };
 
 export default ThemeSwitch;

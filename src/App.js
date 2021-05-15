@@ -7,6 +7,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./assets/style.css";
 import { keepTheme } from "./utils/theme";
+import LanguageSwitch from "./components/LanguageSwitch";
 
 export default function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ export default function App() {
               <Link to="/users">Users</Link>
             </li>
             <ThemeSwitch />
+            <LanguageSwitch />
           </ul>
         </nav>
         <Switch>
