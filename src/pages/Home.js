@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <>
+    <div className="bajshome">
       <div className="bajs"></div>
       <div className="bajscontent">
         <h1>Welcome to Bajsappen!</h1>
@@ -9,7 +9,7 @@ const Home = () => {
           and keeping track of your own!
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

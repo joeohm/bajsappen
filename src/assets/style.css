@@ -50,6 +50,7 @@ p {
   color: var(--text);
 }
 
+/* All things bajs */
 .bajs {
   margin: auto;
   height: 480px;
@@ -68,6 +69,10 @@ p {
 
 .bajsbutton {
   font-family: "Rubik", sans-serif;
+}
+
+.bajshome {
+  padding: 20px;
 }
 
 .switcher-top {
@@ -110,4 +115,18 @@ p {
   background-size: 60%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .bajs {
+    width: 80vw;
+    height: 250px;
+  }
+
+  .bajscontent {
+    margin: 0 40px;
+  }
 }
