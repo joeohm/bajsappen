@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./assets/style.css";
 import { keepTheme } from "./utils/theme";
-import LanguageSwitch from "./components/LanguageSwitch";
+// import LanguageSwitch from "./components/LanguageSwitch";
 
 export default function App() {
   useEffect(() => {
@@ -17,22 +17,22 @@ export default function App() {
     <Router>
       <div>
         <nav>
-          <ul className="navbar">
-            <li className="nav-link">
+          <div className="navbar">
+            <div className="nav-link">
               <Link to="/">Home</Link>
-            </li>
-            <li className="nav-link">
+            </div>
+            <div className="nav-link">
               <Link to="/get-started">Get started</Link>
-            </li>
-            <li className="nav-link">
+            </div>
+            <div className="nav-link">
               <Link to="/my-bajsklumps">My bajsklumps</Link>
-            </li>
-            <li className="nav-link">
+            </div>
+            <div className="nav-link">
               <Link to="/users">Users</Link>
-            </li>
+            </div>
             <ThemeSwitch />
-            <LanguageSwitch />
-          </ul>
+            {/* <LanguageSwitch /> */}
+          </div>
         </nav>
         <Switch>
           <Route exact path="/">

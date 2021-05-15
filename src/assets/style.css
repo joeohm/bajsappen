@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
 
 html {
   font-family: "Rubik", sans-serif;
@@ -28,6 +28,7 @@ html {
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
+  align-items: center;
 }
 
 .nav-link {
@@ -36,7 +37,7 @@ html {
 
 .nav-link a {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 29px;
   text-decoration: none;
   color: var(--text);
   text-transform: uppercase;
@@ -67,4 +68,46 @@ p {
 
 .bajsbutton {
   font-family: "Rubik", sans-serif;
+}
+
+.switcher-top {
+  position: absolute;
+  z-index: 1;
+
+  background-color: #77997b;
+  width: 26px;
+  height: 26px;
+  border-radius: 26px;
+}
+
+.switcher-bottom {
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  background-color: #a3aa95;
+  width: 35px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.theme-switcher {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.night-mode {
+  right: -13px;
+  background-image: url("moon.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.day-mode {
+  background-image: url("sun.svg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
