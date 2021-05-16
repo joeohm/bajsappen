@@ -5,7 +5,7 @@ const Users = () => {
     fetch(`${process.env.REACT_APP_DB}/users`)
       .then((response) => response.json())
       .then((data) => setUsers(data));
-  });
+  }, []);
   const [users, setUsers] = useState([]);
   return users.map((user, i) => {
     return (
