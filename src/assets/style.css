@@ -103,7 +103,8 @@ p {
 }
 
 .night-mode {
-  right: -13px;
+  transform: translateX(30px);
+  transition: transform 0.2s ease-in-out;
   background-image: url("moon.svg");
   background-size: 50%;
   background-position: center;
@@ -111,6 +112,8 @@ p {
 }
 
 .day-mode {
+  transform: translateX(5px);
+  transition: transform 0.2s ease-in-out;
   background-image: url("sun.svg");
   background-size: 60%;
   background-position: center;
