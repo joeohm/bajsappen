@@ -50,6 +50,10 @@ p {
   color: var(--text);
 }
 
+label {
+  color: var(--text);
+}
+
 /* All things bajs */
 .bajs {
   margin: auto;
